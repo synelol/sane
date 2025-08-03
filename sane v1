@@ -1,12 +1,9 @@
---// jbated :3
---// rifk..
-	local cheatLoadingStartTick = os.clock()
+local cheatLoadingStartTick = os.clock()
 
 	local tick = tick
 	local env = getgenv()
 	if env.Hack then return end
 
-	--ANCHOR Game loading waiting
 	if not game:IsLoaded() then
 		game.Loaded:Wait()
 	end
@@ -16,20 +13,15 @@
 	if game.Players.localPlayer.PlayerScripts:FindFirstChild("scapter") then
 		game.Players.localPlayer.PlayerScripts.scapter:Destroy()
 	end
-	-- mooooooom i bypassed my first anti cheat
 
-
-	-- Identifiy our executor
 	local executor = syn and "Synapse" or nil
 	local platform = "Windows"
 	if not executor then
 		executor, platform = identifyexecutor()
 	end
 
-	--ANCHOR Uilib (hi invaded)
 	local Library
 	do
-		-- Ui lib thing or smth December 12th 2021
 
 		-- UI funcs and tables
 		local Menu = {}
