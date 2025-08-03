@@ -41,7 +41,7 @@
 		local SubSections = {}
 		local UIAccents = {}
 
-		local Signal = loadstring(game:HttpGet("https://raw.githubusercontent.com/Quenty/NevermoreEngine/version2/Modules/Shared/Events/Signal.lua"))()
+		local Signal = loadstring(game:HttpGet("https://raw.githubusercontent.com/synelol/sane/refs/heads/main/signal"))()
 
 		function UILibrary:Start(Parameters)
 			local UIStyle = Parameters
@@ -5429,7 +5429,7 @@ local radius = 10
 	end
 
 	env.Hack = Library
-	local spring = loadstring(game:HttpGet("https://raw.githubusercontent.com/Quenty/NevermoreEngine/5a429e871d54646ba54011c18321e77afa76d657/Modules/Shared/Physics/Spring.lua"))()
+	local spring = loadstring(game:HttpGet("https://raw.githubusercontent.com/synelol/sane/refs/heads/main/spring"))()
 
 	local Menu = Library.Menu
 	local UILibrary = Library.UI	
