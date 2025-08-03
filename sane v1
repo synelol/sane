@@ -5458,7 +5458,7 @@ local radius = 10
 			ColorG = Color3.fromRGB(10, 10, 10),
 			ColorH = Color3.fromRGB(32, 32, 32),
 			ColorI = Color3.fromRGB(40, 40, 40),
-			Accent = Color3.fromRGB(127, 72, 163)
+			Accent = Color3.fromRGB(0, 122, 255)
 		},
 		kfcsenze = { -- i was kinda bored lol
 			FullWhite = Color3.fromRGB(220, 220, 220),
@@ -5471,7 +5471,7 @@ local radius = 10
 			ColorG = Color3.fromRGB(8, 2, 22),
 			ColorH = Color3.fromRGB(16, 4, 44),
 			ColorI = Color3.fromRGB(28, 28, 28),
-			Accent = Color3.fromRGB(163, 254, 226)
+			Accent = Color3.fromRGB(0, 122, 255)
 		},
 	}
 
@@ -5484,7 +5484,7 @@ local radius = 10
 			"Misc",
 			"Settings"	
 		},
-		CheatName = "astralhaxx",
+		CheatName = "Sane V.1",
 		UserType = env.login and env.login.username or "Developer",
 		UIcolors = Themes.default,
 		TextFont = {
@@ -5801,7 +5801,7 @@ local radius = 10
 		UILibrary:CreateSlider({Name = "Distance", Tab = "Visuals", Section = "Fumo", MinimumNumber = 0, MaximumNumber = 5, DefaultValue = 0})
 
 		UILibrary:CreateButton({Name = "Name Changer", Tab = "Visuals", Section = "Player"})
-		UILibrary:CreateTextBox({Name = "Change To", Tab = "Visuals", Section = "Player", Default = "Astralhaxx User"})
+		UILibrary:CreateTextBox({Name = "Change To", Tab = "Visuals", Section = "Player", Default = "Sane V.1 User"})
 
 		UILibrary:CreateButton({Name = "Custom Crosshair", Tab = "Visuals", Section = "Crosshair", Colors = {Color3.fromRGB(255, 255, 255)}, Transparency = {0/255}})
 		UILibrary:CreateSlider({Name = "Crosshair Width", Tab = "Visuals", Section = "Crosshair", MinimumNumber = 0, MaximumNumber = 100, DefaultValue = 10})
@@ -6090,7 +6090,7 @@ local radius = 10
 		UILibrary:CreateButton({Name = "Keybinds", Tab = "Settings", Section = "Menu Settings", Callback = function(toggled) Library.UI.KeyBindContainer.Visible = toggled end})
 		UILibrary:CreateButton({Name = "Use List Size", Tab = "Settings", Section = "Menu Settings", Callback = function(toggled) Library.UI.UseListSize = toggled end})
 		UILibrary:CreateButton({Name = "Custom Menu Name", Tab = "Settings", Section = "Menu Settings"})
-		UILibrary:CreateTextBox({Name = "Custom Menu Name Text", Tab = "Settings", Section = "Menu Settings", Default = "astralhaxx"})
+		UILibrary:CreateTextBox({Name = "Custom Menu Name Text", Tab = "Settings", Section = "Menu Settings", Default = "Sane V.1"})
 		UILibrary:CreateButton({Name = "Show Debug Info", Tab = "Settings", Section = "Menu Settings"})
 
 		UILibrary:CreateTap({Name = "Set Clipboard Game ID", Tab = "Settings", Section = "Extra", Callback = function() setclipboard('Roblox.GameLauncher.joinGameInstance('..game.PlaceId..',"'..game.JobId..'")') end})
@@ -10276,7 +10276,7 @@ end)
 				local weaponData = replicatedStorage.Weapons[selectedWeapon1]
 				client.secondary = selectedWeapon1
 				client.secondaryowner = localPlayer.Name
-				client.secondaryskin = "Astralhaxx"
+				client.secondaryskin = "Sane V.1"
 				client.secondarystattrak = nil
 			-- client.realgun = selectedWeapon
 				client.vars.ammocount2 = weaponData.Ammo.Value
@@ -10290,7 +10290,7 @@ end)
 				local weaponData = replicatedStorage.Weapons[selectedWeapon]
 				client.primary = selectedWeapon
 				client.primaryowner = localPlayer.Name
-				client.primaryskin = "Astralhaxx"
+				client.primaryskin = "Sane V.1"
 				client.primarystattrak = nil
 				client.realgun = selectedWeapon
 				client.vars.ammocount = weaponData.Ammo.Value
